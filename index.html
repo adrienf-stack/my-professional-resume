@@ -1,0 +1,204 @@
+ <!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Martin - Cloud & DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media print {
+            body { background: white !important; color: #1e293b !important; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+            .no-print { display: none !important; }
+            .print-container { box-shadow: none !important; border: none !important; margin: 0 !important; width: 100% !important; max-width: 100% !important; padding: 1cm !important; }
+            .dark-theme { background: white !important; color: #1e293b !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 py-6 px-4 flex flex-col items-center justify-start min-h-screen">
+
+    <!-- Bouton d'action (Caché à l'impression) -->
+    <div class="no-print mb-6 flex gap-4">
+        <button onclick="window.print()" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl shadow-lg shadow-cyan-500/20 transition flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-print"></i> Télécharger en PDF / Imprimer
+        </button>
+    </div>
+
+    <!-- Conteneur principal format A4 (Optimisé affichage web + impression) -->
+    <div class="print-container bg-slate-900 border border-slate-800 w-full max-w-[210mm] shadow-2xl rounded-2xl p-8 md:p-10 relative overflow-hidden">
+        
+        <!-- Effet de lueur en arrière-plan -->
+        <div class="absolute -top-32 -right-32 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- En-tête -->
+        <header class="border-b border-slate-800 pb-5 mb-5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 relative z-10">
+            <div>
+                <div class="flex items-center gap-2">
+                    <h1 class="text-3xl font-black tracking-tight text-white">Adrien Fongang</h1>
+                    <span class="bg-cyan-500/10 text-cyan-400 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-cyan-500/20">Disponible</span>
+                </div>
+                <p class="text-base font-semibold text-cyan-400 mt-0.5">Cloud & DevOps Engineer</p>
+                <p class="text-xs text-slate-400 mt-1">3 ans d'expérience • Infrastructure As Code, Kubernetes & CI/CD Scalable</p>
+            </div>
+            <div class="text-xs space-y-1.5 text-slate-300 md:text-right">
+                <div><i class="fa-solid fa-location-dot w-4 text-cyan-400"></i><span> Paris, France (Hybride)</span></div>
+                <div><i class="fa-solid fa-envelope w-4 text-cyan-400"></i><span> alex.martin.cloud@email.com</span></div>
+                <div><i class="fa-brands fa-github w-4 text-cyan-400"></i><span> github.com/alex-clouddevops</span></div>
+                <div><i class="fa-brands fa-linkedin w-4 text-cyan-400"></i><span> linkedin.com/in/alexandremartin-cloud</span></div>
+            </div>
+        </header>
+
+        <!-- Grille Principale en 2 colonnes pour optimiser l'espace "Une Page" -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+
+            <!-- Colonne de Gauche : Compétences & Stack -->
+            <div class="space-y-5 md:border-r md:border-slate-800 md:pr-6">
+                
+                <!-- Résumé -->
+                <section>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-astronaut"></i> Profil
+                    </h2>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Ingénieur Cloud & DevOps passionné par l'automatisation, la haute disponibilité et la réduction des coûts d'infrastructure. Expérience solide dans la conception de pipelines CI/CD robustes et la gestion de clusters Kubernetes en environnements cloud natifs.
+                    </p>
+                </section>
+
+                <!-- Stack Technique -->
+                <section>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-layer-group"></i> Stack Technique
+                    </h2>
+                    <div class="space-y-2 text-xs">
+                        <div>
+                            <span class="font-semibold text-slate-200 block text-[11px] mb-1">Cloud & IaC</span>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">AWS (EKS, IAM, S3)</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Terraform</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Ansible</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">GCP</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-slate-200 block text-[11px] mb-1">Orchestration & Containers</span>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Kubernetes</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Docker</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Helm</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">ArgoCD</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-slate-200 block text-[11px] mb-1">CI/CD & Observabilité</span>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">GitHub Actions</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">GitLab CI</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Prometheus</span>
+                                <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[10px] border border-slate-700">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications & Éducation -->
+                <section>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-graduation-cap"></i> Certifs & Diplôme
+                    </h2>
+                    <ul class="text-xs space-y-2 text-slate-300">
+                        <li>
+                            <div class="font-semibold text-slate-200">AWS Certified DevOps Engineer – Professional</div>
+                            <div class="text-[10px] text-slate-400">Délivré en 2025</div>
+                        </li>
+                        <li>
+                            <div class="font-semibold text-slate-200">Certified Kubernetes Administrator (CKA)</div>
+                            <div class="text-[10px] text-slate-400">Délivré en 2024</div>
+                        </li>
+                        <li>
+                            <div class="font-semibold text-slate-200">Master Cloud & Réseaux</div>
+                            <div class="text-[10px] text-slate-400">École d'Ingénieurs (2021 – 2023)</div>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <!-- Colonne de Droite : Expériences & Projets Portfolio -->
+            <div class="md:col-span-2 space-y-5">
+                
+                <!-- Expérience Professionnelle -->
+                <section>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-briefcase"></i> Expérience Professionnelle
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <!-- Exp 1 -->
+                        <div>
+                            <div class="flex justify-between items-baseline mb-0.5">
+                                <h3 class="font-bold text-xs text-white">DevOps & Cloud Engineer • <span class="text-cyan-400">CloudScale Solutions</span></h3>
+                                <span class="text-[11px] text-slate-400 font-medium">Juil. 2024 – Présent</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 italic mb-1">Paris, France</p>
+                            <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
+                                <li class="leading-snug">Migration de l'infrastructure monolithique vers des microservices sur <span class="font-semibold text-slate-100">AWS EKS</span> pilotés par Terraform.</li>
+                                <li class="leading-snug">Mise en place de la stratégie GitOps avec <span class="font-semibold text-slate-100">ArgoCD</span>, réduisant les incidents de déploiement de 75%.</li>
+                                <li class="leading-snug">Optimisation des coûts de calcul cloud (FinOps) générant une économie de <span class="font-semibold text-slate-100">25% par mois</span>.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Exp 2 -->
+                        <div>
+                            <div class="flex justify-between items-baseline mb-0.5">
+                                <h3 class="font-bold text-xs text-white">Junior Cloud Infrastructure Engineer • <span class="text-cyan-400">DataFlow Systems</span></h3>
+                                <span class="text-[11px] text-slate-400 font-medium">Sep. 2023 – Juin 2024</span>
+                            </div>
+                            <p class="text-[10px] text-slate-400 italic mb-1">Lyon, France</p>
+                            <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
+                                <li class="leading-snug">Automatisation des déploiements applicatifs via des pipelines CI/CD sur <span class="font-semibold text-slate-100">GitHub Actions</span>.</li>
+                                <li class="leading-snug">Implémentation de la stack de monitoring <span class="font-semibold text-slate-100">Prometheus & Grafana</span> pour le suivi des performances en temps réel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Réalisations / Projets Clés (Portfolio Section) -->
+                <section>
+                    <h2 class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-3 flex items-center gap-1.5">
+                        <i class="fa-solid fa-code-branch"></i> Projets Clés & Portfolio
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <!-- Projet 1 -->
+                        <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-bold text-slate-200">K8s Multi-Cloud Multi-Region</span>
+                                <a href="https://github.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 text-[11px]"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <p class="text-[11px] text-slate-400 leading-snug">
+                                Déploiement automatisé d'un cluster haute disponibilité sur AWS et GCP avec basculement automatique et Terraform.
+                            </p>
+                        </div>
+
+                        <!-- Projet 2 -->
+                        <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition">
+                            <div class="flex justify-between items-start mb-1">
+                                <span class="font-bold text-slate-200">FinOps Cost Analyzer CLI</span>
+                                <a href="https://github.com" target="_blank" class="text-cyan-400 hover:text-cyan-300 text-[11px]"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <p class="text-[11px] text-slate-400 leading-snug">
+                                Outil open-source en Go/Python pour auditer les ressources cloud orphelines et notifier via Slack les optimisations.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
