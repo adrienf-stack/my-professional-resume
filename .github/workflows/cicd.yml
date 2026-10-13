@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest # macos, windows-latest
         steps:
             - name: Clone the code
-              uses: action/checkout@v4
+              uses: actions/checkout@v4
             - name: Build image
               run:
                 docker build -t adfongang/cicd-portfolio .
