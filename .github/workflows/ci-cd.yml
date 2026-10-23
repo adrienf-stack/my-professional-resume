@@ -11,7 +11,7 @@ jobs:
     build_scan:
         runs-on: ubuntu-latest 
         steps: 
-            
+
             - name: Chekout the Code
               uses: actions/checkout@v7
             - name: Trivy Scan
