@@ -33,7 +33,7 @@ jobs:
                 exit-code: 0
                 ignore-unfixed: true
                 severity: CRITICAL,HIGH
-                
+
             - name: Configure AWS credentials
               uses: aws-actions/configure-aws-credentials@v4
               with:
@@ -46,6 +46,3 @@ jobs:
 
             - name: Push Image to Ecr 
               run: docker push 849415223281.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest
-               
-    
-              
