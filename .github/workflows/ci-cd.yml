@@ -16,7 +16,7 @@ jobs:
         runs-on: ubuntu-latest 
         steps: 
             - name: Checkout the Code
-              uses: actions/checkout@v7
+              uses: actions/checkout@v4
 
             - name: Trivy Scan
               uses: aquasecurity/trivy-action@v0.36.0
@@ -38,13 +38,13 @@ jobs:
                 severity: CRITICAL,HIGH
                 
             - name: Configure AWS credentials
-               uses: aws-actions/configure-aws-credentials@v4 # More information on this action can be found below in the 'AWS Credentials' section
-               with:
+              uses: aws-actions/configure-aws-credentials@v4 # More information on this action can be found below in the 'AWS Credentials' section
+              with:
                  aws-region: us-east-1
                  role-to-assume: arn:aws:iam::849415223281:role/github-action-role
             - name: Login to Amazon ECR
-               id: login-ecr
-               uses: aws-actions/amazon-ecr-login@v2
+              id: login-ecr
+              uses: aws-actions/amazon-ecr-login@v2
 
             - name: Push Image to Ecr 
               run: docker push 849415223281.dkr.ecr.us-east-1.amazonaws.com/my-repo:latest
